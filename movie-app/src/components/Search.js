@@ -1,9 +1,15 @@
 import React from "react";
 
-function Search() {
+function Search({handleInput}) {
     return (
         <section className="searchbox-wrap">
-            <input type="text" placeholder="Search for Movie" className="searchbox"></input>
+
+            <input  type="text" 
+                    placeholder="Search for Movie" 
+                    className="searchbox"
+                    onChange={handleInput}>
+            </input>
+
         </section>
     )
 }
